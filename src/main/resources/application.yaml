@@ -1,0 +1,20 @@
+server:
+  port: 8080
+
+spring:
+  #------------------------SqlServer-----------------------------
+  datasource:
+    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+    url: jdbc:sqlserver://10.110.86.2:1433;databaseName=gsclouddms
+    username: gsclouddms
+    password: Test220302?!
+    type: com.alibaba.druid.pool.DruidDataSource
+  jpa:
+    show-sql: true
+
+#mybatis-plus:
+#  mapper-locations: classpath:/mapper/*.xml
+##  type-aliases-package:     #自动扫描到自定义的POJO
+#  global-config:
+#    refresh-mapper: true
+
